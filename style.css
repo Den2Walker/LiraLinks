@@ -4,30 +4,34 @@
 	box-sizing: border-box;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
+    
 }
 
 
 body {
     background: url(assets/bg.svg) no-repeat top center /cover;
+
 }
 
 body * {
     font-family: 'Inter', sans-serif;
     color: #000000;
+    
 }
 
 #container {
-    width: 360px;
+    width: 450px;
     margin: 56px auto 0px;
     padding: 0 24px;
+    
 }
 
 #profile {
-    text-align: center;
+    justify-content: center;
 }
 
 #profile img {
-    width: 200px;
+    width: 400px;
 }
 
 ul {
@@ -94,4 +98,10 @@ footer {
     padding: 24px 0;
     text-align: center;
     font-size: 12px;
+}
+
+@media (max-width:360px) {
+    body {
+        height: 200vh;
+    }
 }
